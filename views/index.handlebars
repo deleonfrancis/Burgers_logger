@@ -2,7 +2,7 @@
 
 {{!-- Burgers That You'd Love To Try! --}}
     <div>
-    <h3 class="h2-burgers">Burgers That You'd Love To Try!</h3>
+    <h3 class="h2-burgers">Burgers That You'd Love To Try</h3>
       {{#each burgers}}
         {{#unless eaten}}
           {{> burgers/burger-block eaten=true}}
@@ -33,7 +33,7 @@
      
 {{!-- Burgers that you've eaten! --}}
     <div>
-      <h3 class="h2-burgers-eaten">Burgers that you've eaten!</h3>
+      <h3 class="h2-burgers-eaten">Burgers That You've Eaten</h3>
       {{#each burgers}}
         {{#if eaten}}
           {{> burgers/burger-block eaten=false}}

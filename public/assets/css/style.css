@@ -1,15 +1,15 @@
 /* Elements */
-body{
+body {
   background-color: rgb(252, 170, 18);
 }
 
-.jumbotron{
+.jumbotron {
   background-color: #c01919;
   color: rgb(252, 170, 18);
 }
 
 main {
-  border-radius: 25px;
+  border-radius: 10px;
   width: 95%;
   background-color: antiquewhite;
 }
@@ -22,11 +22,11 @@ div:empty {
 .eat-button {
   transition-duration: 0.4s;
   background-color: white;
-  border: 1px solid #4CAF50;
+  border: 1px solid #4caf50;
 }
 
 .eat-button:hover {
-  background-color: #4CAF50; /* Green */
+  background-color: #4caf50; /* Green */
   color: white;
 }
 
@@ -65,6 +65,6 @@ div:empty {
   font-family: "Gloria Hallelujah", cursive;
 }
 
-.add-burger{
-margin-top: 10%;
+.add-burger {
+  margin-top: 10%;
 }
