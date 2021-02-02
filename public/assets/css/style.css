@@ -1,46 +1,44 @@
 /* Elements */
 body{
-  background-color: #456268;
+  background-color: rgb(252, 170, 18);
 }
 
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+.jumbotron{
+  background-color: #c01919;
+  color: rgb(252, 170, 18);
 }
 
 main {
-  border-radius: 15px;
+  border-radius: 25px;
   width: 95%;
-  background-color: #d0e8f2;
+  background-color: antiquewhite;
 }
 
 div:empty {
   display: none;
 }
 
-.btn{
-
-  float:left;
-}
-
 /* Eaten Button */
 .eat-button {
   transition-duration: 0.4s;
+  background-color: white;
+  border: 1px solid #4CAF50;
 }
 
 .eat-button:hover {
-  background-color: green; /* Green */
+  background-color: #4CAF50; /* Green */
   color: white;
 }
 
 /* Delete Button */
 .delete-button {
   transition-duration: 0.4s;
+  background-color: white;
+  border: 1px solid #f44336;
 }
 
 .delete-button:hover {
-  background-color: red; /* Red */
+  background-color: #f44336; /* Red */
   color: white;
 }
 
@@ -65,4 +63,8 @@ div:empty {
 }
 .header {
   font-family: "Gloria Hallelujah", cursive;
+}
+
+.add-burger{
+margin-top: 10%;
 }
