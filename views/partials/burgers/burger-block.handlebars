@@ -1,9 +1,16 @@
-<li>
-	{{name}}
-
-	<button class="eat-burger" data-id="{{id}}" data-neweaten="{{eaten}}">
+<div>
+<a href="#" class="list-group-item list-group-item-action list-burgers p-1">
+    {{name}}
+</a>
+</div>
+{{!-- Buttons --}}
+<div class="mb-4">
+{{!--Dynamic Eaten or Eaten It button  --}}
+<button class="eat-burger eat-button" data-id="{{id}}" data-neweaten="{{eaten}}">
 		{{#if eaten}}Eaten!{{else}}Eaten It!{{/if}}
-	</button>
+</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
-</li>
+{{!-- Delete Button --}}
+<button class="delete-burger delete-button" data-id="{{this.id}}">DELETE!</button>
+</div>
+

@@ -1,7 +1,53 @@
+/* Elements */
+body{
+  background-color: #456268;
+}
+
 li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+}
+
+main {
+  border-radius: 15px;
+  width: 95%;
+  background-color: #d0e8f2;
+}
+
+div:empty {
+  display: none;
+}
+
+.btn{
+
+  float:left;
+}
+
+/* Eaten Button */
+.eat-button {
+  transition-duration: 0.4s;
+}
+
+.eat-button:hover {
+  background-color: green; /* Green */
+  color: white;
+}
+
+/* Delete Button */
+.delete-button {
+  transition-duration: 0.4s;
+}
+
+.delete-button:hover {
+  background-color: red; /* Red */
+  color: white;
+}
+
+/*  */
+
+.list-burgers {
+  width: 70%;
 }
 
 .label {
@@ -16,4 +62,7 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+.header {
+  font-family: "Gloria Hallelujah", cursive;
 }

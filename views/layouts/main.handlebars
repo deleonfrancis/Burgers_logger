@@ -2,12 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+		{{!-- Bootstrap --}}
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		
+		{{!-- Font Awesome --}}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		{{!-- Google Fonts --}}
+		<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+		
+		{{!-- My Css --}}
 		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-		<title>Burger Logger</title>
+		
+		<title>Burger Log</title>
+		
+		{{!-- jQuery --}}
 		<script src="https://code.jquery.com/jquery.js"></script>
+		
+		{{!-- My JS --}}
 		<script src="/assets/js/burgers.js"></script>
 	</head>
 	<body>
+		{{!-- Jumbotron --}}
+		<header>
+			<div class="jumbotron jumbotron-fluid">
+  			<div class="container text-center">
+    			<h1 class="display-1 header">Burger Log</h1>
+				<br>
+				<br>
+    			<p class="lead">Keep track of the burger you'd like to eat and have already eaten.</p>
+  			</div>
+		</div>
+		</header>
+		
+
+		{{!-- Content --}}
 		{{{ body }}}
 	</body>
 </html>

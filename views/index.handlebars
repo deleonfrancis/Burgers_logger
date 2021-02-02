@@ -1,38 +1,50 @@
-<h1>Burgers!</h1>
+<main class="mx-auto p-3 d-flex justify-content-between">
 
-<h2>Burgers that haven't been eaten!</h2>
+{{!-- Burgers That You'd Love To Try! --}}
+    <div>
+    <h2 class="h2-burgers">Burgers That You'd Love To Try!</h2>
+      {{#each burgers}}
+        {{#unless eaten}}
+          {{> burgers/burger-block eaten=true}}
+        {{/unless}}
+      {{/each}}
+    </div>
 
-<ul>
-  {{#each burgers}}
-    {{#unless eaten}}
-      {{> burgers/burger-block eaten=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+{{!-- Add A Burger --}}
 
-<h2>Burgers that you've eaten!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burgers/burger-block eaten=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
+<div class="align-self-center">
+  <i class="fas fa-hamburger"></i>
 <h2>Add a Burger</h2>
-<form class="create-form">
+    <form class="create-form">
 
-  <div class="form-group">
-    <label for="br">Burger Name:</label>
-    <input type="text" id="br" name="name">
-  </div>
+      <div class="form-group">
+        <label for="br">Burger Name:</label>
+        <input type="text" id="br" name="name">
+      </div>
 
-  <div class="form-group">
-    <label for="eaten">Eaten</label><br>
-    <input type="radio" name="eaten" value="1" checked> Eaten<br>
-    <input type="radio" name="eaten" value="0"> Not Eaten
-  </div>
+      <div class="form-group">
+        <label for="eaten">Eaten</label><br>
+        <input type="radio" name="eaten" value="1" checked> Eaten<br>
+        <input type="radio" name="eaten" value="0"> Not Eaten
+      </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+      <button type="submit">Add Burger</button>
+    </form>
+</div>
+    
+    
+{{!-- Burgers that you've eaten! --}}
+    <div>
+      <h2 class="h2-burgers-eaten">Burgers that you've eaten!</h2>
+      {{#each burgers}}
+        {{#if eaten}}
+          {{> burgers/burger-block eaten=false}}
+        {{/if}}
+      {{/each}}
+    </div>
+
+    
+
+</main>
+
+
